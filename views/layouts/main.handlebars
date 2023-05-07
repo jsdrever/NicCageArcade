@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Plays Mini Games!</title>
+  <link rel="stylesheet" href="/css/tictactoe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="/css/tictactoe.css" rel="stylesheet">     
+</head>
+
+<body style="background-color: rgb(202, 207, 243);">
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1 class="arcadia" >
+        <span role="img" aria-label="money">🎰</span>
+        <a class= "color" style="text-align:center;" href="games">Nic Cage Arcade!</a>
+        <span role="img" aria-label="money">🎱</span>
+      </h1>
+      {{#if logged_in}}
+      <div class="arcadia" >
+        <button class="btn" > <a style="color:aliceblue;" href="/games">Home</button></a>
+      </div>
+      {{/if}}
+    </header>
+    <main class="container container-fluid mt-5">
+      {{{ body }}}
+    </main>
+    <footer>
+        
+    </footer>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>

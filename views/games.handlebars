@@ -1,0 +1,102 @@
+ 
+      <div class="arcadia" >
+        <button class="btn" id="logout"> <a style="color:aliceblue;" href="login">  logout</button></a>
+      </div>
+
+  <nav>
+    <div style="background-color: blue; color:aliceblue;" class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/DanielleSison">Danielle Sison</a></li>
+        <li><a href="https://github.com/bulkingfire">Vageli Stathatos</a></li>
+        <li><a href="https://github.com/CoreyDC">Corey Calbreath</a></li>
+        <li><a href="https://github.com/DongleJosh">Joshua Romani</a></li>
+        <li><a href="https://github.com/JustinCrowson">Justin Crowson</a></li>
+        <li><a href="https://github.com/xAsdfaf">George Jordan</a></li>
+        <li><a href="https://jsdrever.github.io/PortfolioJeffDrever/">Jeff Drever</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="borderlands" id="gamer">
+
+{{!-- tic tac toe --}}
+
+
+  <div  class="row">
+    <div class="col s5 m4">
+      <div id="card" class="card">
+        <div class="card-image">
+          
+          <img src="images/tictactoe.jpg">
+        
+        </div>
+        <div class="card-content">
+          <p> 'Face/off' against Nic Cage. It's him you're playing. For real. Just trust me dude.</p>
+        </div>
+        <div class="card-action">
+          <a style="color:rgb(0, 191, 255)" href="/nictactoe">Play Nic Tac Toe</a>
+        </div>
+      </div>
+    </div>
+  
+
+{{!-- hangman --}}
+  
+    <div class="col s5 m4">
+      <div id="card"  class="card">
+        <div class="card-image">
+          <img src="images/hangman.png">
+        </div>
+        <div class="card-content">
+          <p>Nic Cage dies if you lose... So, like don't. </p>
+        </div>
+        <div class="card-action">
+          <a style="color:rgb(0, 191, 255)" href="/hangman">Play Hangman</a>
+        </div>
+      </div>
+    </div>
+ 
+
+{{!-- snake --}}
+  
+    <div class="col s5 m4">
+      <div id="card" class="card">
+        <div class="card-image">
+          <img src="images/snake.jpg">
+       
+         
+        </div>
+        <div class="card-content">
+          <p>"I am a snake" - Nic Cage</p>
+        </div>
+        <div class="card-action">
+          <a style="color:rgb(0, 191, 255)" href="/snake">Play Snake</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <div id="card" class="row">
+    <div class="col s12 m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span style="text-align:center; color:rgb(0, 191, 255);" class="card-title"> <strong> &#127942; Scoreboard 🏆</strong></span>
+          <p>Hey {{ user.name }}, good job on those high scores. Im so proud of you.  </p>
+        </div>
+        <div class="card-action">
+          <p>Nic-Tac-Toe: {{ user.nicScore }} </p>
+          <p>Hangman: {{ user.hangScore }} </p>
+          <p>Snake: {{ user.snakeScore }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+        <p>
+            &copy; 2023 Seriously Sticky Student Solutions Services Inc, All rights reserved.
+        </p>
+    </footer>
+  <script src="/js/login.js"></script>
+  <script src="/js/logout.js"></script>
+ 
